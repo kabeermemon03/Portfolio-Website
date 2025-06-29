@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio Website</title>
     <link rel="icon"
-        href="https://images-workbench.99static.com/zWUOSs_qH98XmDMkt1h2DFqUrGA=/99designs-contests-attachments/139/139945/attachment_139945363"
+        href="portfolio.svg"
         type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
     <style>
@@ -18,19 +18,22 @@
     <header>
         <nav class="navbar">
             <div class="Logo">
-                <h2><a href="/" class="logo-link">Portfolio</a></h2>
+                <div>
+                    <h2><a href="/" class="logo-link">Portfolio</a></h2>
+                </div>
             </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
             <ul class="nav-links">
                 <li>Home</li>
                 <li>Services</li>
                 <li>About</li>
                 <li>Skills</li>
-                <li>Contact</li>
                 <li>Projects</li>
+                <li>Contact</li>
             </ul>
         </nav>
     </header>
-    <section class="hero-section">
+    <section id="Home" class="hero-section">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Hello, I'm Kabeer</h1>
@@ -45,7 +48,7 @@
             </div>
         </div>
     </section>
-    <section class="grid-section">
+    <section id="Services" class="grid-section">
         <div class="services-heading">
             <h2>My Services</h2>
         </div>
@@ -59,7 +62,7 @@
                     <img class="react" src="React.png" alt="">
                 </div>
                 <div class="LearnMore">
-                    <a class="LearnMore-btn" href="">Learn More</a>
+                    <a class="LearnMore-btn" href="ComingSoon.html">Learn More</a>
                 </div>
             </div>
             <div class="grid-item">Video Editing
@@ -69,7 +72,7 @@
                     <img src="AfterEffects.png" alt="">
                 </div>
                 <div class="LearnMore">
-                    <a class="LearnMore-btn" href="">Learn More</a>
+                    <a class="LearnMore-btn" href="ComingSoon.html">Learn More</a>
                 </div>
             </div>
             <div class="grid-item">Graphic Designing
@@ -80,12 +83,12 @@
                     <img src="Photoshop.png" alt="">
                 </div>
                 <div class="LearnMore">
-                    <a class="LearnMore-btn" href="">Learn More</a>
+                    <a class="LearnMore-btn" href="ComingSoon.html">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about-section" id="about">
+    <section class="about-section" id="About">
         <div class="about-container">
             <!-- Image Left -->
             <div class="about-image">
@@ -95,14 +98,16 @@
             <!-- Text Right -->
             <div class="about-text">
                 <h2 class="about-heading">ABOUT ME</h2>
-                <p class="about-role">Muhammad Kabeer Nadeem - <span class="highlight">Mehran University Of Engineering
-                        & Technology</span></p>
+                <p class="about-role">Muhammad Kabeer Nadeem - <a href="https://www.muet.edu.pk/"
+                        class="highlight">Mehran University Of Engineering
+                        & Technology</a></p>
                 <p class="about-description">
                     Hi! I'm Kabeer Memon — a dedicated Frontend Web Developer, Video Editor, and Graphic Designer,
                     currently pursuing a degree in Electronics Engineering at Mehran University of Engineering and
                     Technology.
 
-                    I specialize in building modern, responsive websites using HTML, CSS, JavaScript, React,  and TailWindCSS,
+                    I specialize in building modern, responsive websites using HTML, CSS, JavaScript, React, and
+                    TailWindCSS,
                     with a strong focus on clean design and user-friendly interfaces.
 
                     Beyond web development, I offer professional video editing services, creating impactful content for
@@ -124,6 +129,129 @@
                             alt="LinkedIn"></a>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="Skills-Section">
+        <div class="skills-heading">
+            <h2>My Skills</h2>
+
+        </div>
+
+        <div class="skills-grid">
+            <!-- Skill Item -->
+            <div class="skill-item">
+                <img src="Html.png" alt="HTML" />
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skill-item">
+                <img src="CSS.png" alt="CSS" />
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skill-item">
+                <img src="JS.png" alt="JavaScript" />
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-item">
+                <img src="Bootstrap.png" alt="Bootstrap" />
+                <h3>Bootstrap</h3>
+            </div>
+
+            <div class="skill-item">
+                <img src="React.png" alt="React" />
+                <h3>React</h3>
+            </div>
+
+            <div class="skill-item">
+                <img src="Flask.png" alt="Flask" />
+                <h3>Flask</h3>
+            </div>
+
+            <div class="skill-item">
+                <img src="SQL.png" alt="SQL" />
+                <h3>SQL</h3>
+            </div>
+
+            <div class="skill-item">
+                <img src="PremierPro.png" alt="Video Editing" />
+                <h3>Video Editing</h3>
+            </div>
+
+            <div class="skill-item">
+                <img src="Python.png" alt="Python" />
+                <h3> Python </h3>
+            </div>
+
+            <div class="skill-item">
+                <img src="icons8-c-48.png" alt="C Language" />
+                <h3>Embedded C</h3>
+            </div>
+        </div>
+    </section>
+    <section class="Certifications-Section">
+        <div class="certifications-heading">
+            <h2>Certifications</h2>
+        </div>
+
+        <div class="certifications-grid">
+            <!-- Certification Item -->
+            <div class="certification-item">
+                <h3>CS50: Introduction to Computer Science</h3>
+                <p>Harvard University (edX)</p>
+                <a href="https://cs50.harvard.edu/cert.pdf" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+
+            <div class="certification-item">
+                <h3>Responsive Web Design</h3>
+                <p>freeCodeCamp</p>
+                <a href="https://freecodecamp.org/cert.pdf" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+
+            <div class="certification-item">
+                <h3>MUETMUN - X</h3>
+                <p>Mehran University Of Engineering & Technology</p>
+                <a href="https://coursera.org/cert.pdf" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+        </div>
+    </section>
+    <section id="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="#" alt="" class="project-img">
+                <h3 class="project-title">Coming Soon!!</h3>
+                <p class="project-description"></p>
+                <!-- <a href="https://github.com/yourname/project1" target="_blank" class="project-link">View Code</a> -->
+            </div>
+            <div class="project-card">
+                <img src="#" alt="" class="project-img">
+                <h3 class="project-title">Coming Soon!!</h3>
+                <p class="project-description">
+                </p>
+                <!-- <a href="https://github.com/yourname/project2" target="_blank" class="project-link">View Code</a> -->
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form method="POST" action="/contact">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 
