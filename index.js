@@ -1,20 +1,27 @@
-const phrases = ["Web Developer","Video Editor","Graphic Designer"];
+const phrases = ["Web Developer", "Video Editor", "Graphic Designer"];
 let i = 0;
 const textElement = document.getElementById("changing-text");
 
-function changeText(){
-    textElement.style.opacity = 0;
-    textElement.style.transform = "scale(0.95)";
+function changeText() {
+  textElement.style.opacity = 0;
+  textElement.style.transform = "scale(0.95)";
 
-setTimeout(() => {
-      textElement.textContent = phrases[i];
+  setTimeout(() => {
+    i = (i + 1) % phrases.length;
+    textElement.textContent = phrases[i];
+    textElement.style.opacity = 1;
+    textElement.style.transform = "scale(1)";
+  }, 400);
+}
 
-      textElement.style.opacity = 1;
-      textElement.style.transform = "scale(1)";
+setInterval(changeText, 2500);
 
-      i = (i + 1) % phrases.length;
-    }, 400); 
-  }
-
-  setInterval(changeText, 2500);
-  changeText(); 
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('active');
+  });
+});
