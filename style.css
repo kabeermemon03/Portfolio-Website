@@ -734,20 +734,5 @@ button[type="submit"]:hover {
     margin-bottom: 20px;
     font-weight: 500;
 }
-.nav-links {
-  display: none;
-  /* ...other styles */
-}
-.nav-links.active {
-  display: flex;
-}
-.nav-links li:hover,
-.nav-links li:active {
-    background-color: rgba(79, 0, 0, 0.05);
-}
 
-.nav-links li:hover::after,
-.nav-links li:active::after {
-    transform: scaleX(1);
-}
 
